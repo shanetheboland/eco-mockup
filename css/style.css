@@ -348,12 +348,12 @@ html {
 
 body {
   height: 100%;
-  font-family: 'Noto Serif', Georgia, serif;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
-  color: #FFFFFF;
-  background-color: #222;
+  color: #222;
+  background-color: #FFFFFF;
   -webkit-text-size-adjust: 100%; }
 
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
@@ -365,14 +365,14 @@ img {
   vertical-align: middle; }
 
 a {
-  color: #0074D9;
+  color: #006c64;
   text-decoration: none;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out; }
   a:visited {
-    color: #0074D9; }
+    color: #006c64; }
   a:hover {
-    color: #005ba6;
+    color: #003934;
     cursor: pointer;
     text-decoration: underline; }
 
@@ -401,19 +401,19 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure {
 /* Type Scale (h1, h2, h3, p, small)
    ========================================================================== */
 h1, .h1 {
-  font: normal 700 64px/1.40625 'Noto Sans', Helvetica, Arial, sans-serif; }
+  font: normal 700 64px/1.40625 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
 
 h2, .h2 {
-  font: normal 700 48px/1.25 'Noto Sans', Helvetica, Arial, sans-serif; }
+  font: normal 700 48px/1.25 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
 
 h3, .h3 {
-  font: normal 700 32px/1.875 'Noto Sans', Helvetica, Arial, sans-serif; }
+  font: normal 700 32px/1.875 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
 
 p {
-  font: normal 400 20px/1.5 'Noto Serif', Georgia, serif; }
+  font: normal 400 20px/1.5 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; }
 
 small, .small {
-  font: normal 700 14px/2.14285 'Noto Sans', Helvetica, Arial, sans-serif;
+  font: normal 700 14px/2.14285 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -589,9 +589,21 @@ ul, ol {
 /* ==========================================================================
  SITE LAYOUT
  ========================================================================== */
+main p {
+  margin-bottom: 60px; }
+
 /* ==========================================================================
  HEADER
  ========================================================================== */
+.page-title {
+  text-transform: uppercase; }
+
+.green {
+  background: #006c64; }
+
+.nav-link + .nav-link {
+  margin-left: 30px; }
+
 /* ==========================================================================
  FOOTER
  ========================================================================== */

@@ -2,8 +2,8 @@
    VARIABLES
    ========================================================================== */
 // Fonts
-$sans-serif-font: 'Noto Sans', Helvetica, Arial, sans-serif;
-$serif-font: 'Noto Serif', Georgia, serif;
+$sans-serif-font: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+$serif-font: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 $small-font: $sans-serif-font;
 
 // Black & White
@@ -16,16 +16,16 @@ $lightgray: lighten($gray, 40%);
 $darkgray: darken($gray, 25%);
 
 // Colors
-$red: #FF4136;
+$green: #006c64;
 $blue: 	 #0074D9;
 
 
 // Color Aliases
-$background-color: $black;
-$primary-color:    $red;
+$background-color: $white;
+$primary-color:    $green;
 $secondary-color:  $blue;
-$text-color:       $white;
-$link-color:       $blue;
+$text-color:       $black;
+$link-color:       $green;
 
 
 // Spacing

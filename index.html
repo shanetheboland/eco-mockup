@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Calc">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic|Merriweather:400,900' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,900,400italic|Merriweather:400,900' rel='stylesheet' type='text/css'> -->
 
     <!-- Uncomment to view & test baseline -->
     <!-- <link rel="stylesheet" href="http://basehold.it/30"> -->
@@ -27,15 +27,54 @@
   </head>
   <body>
     
-    <!-- Replace this with your own content -->
-    <div style="display:table;table-layout:fixed:text-align:center;width:100%;height:100%;">
-      <p style="display:table-cell;height:100%;vertical-align:middle;text-align:center; width:100%;">
-        ahhh, nothing like the feeling of a new HTML project<br><br>
-        <small>enjoy</small>
-      </p>
+    <nav class="grid">
+      <div class="unit whole align-center">
+
+        <a href="#" class="nav-link">What We Do</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Store</a>
+        <a href="#" class="nav-link">Contact</a>
+
+      </div>
+    </nav>
+
+    <div class="grid">
+      <div class="unit whole align-center">
+
+        <h1 id="page-title" class="page-title">Ecovative</h1>
+
+      </div>
     </div>
 
-    <!-- Include your JS here -->
+    
+    <div class="grid">
 
+      <main class="unit three-fifths centered">
+
+      <!-- tech, what we do/make -->
+        <p>We create things using mushrooms.</p>
+
+        <p>Yes that’s right. Mushrooms.</p>
+
+        <p>We take substrate (corn husks, rice hulls, or whathaveyou). We mix it with mycelium. We add two parts magic & five parts science. And out comes Ecovative’s mushroom material.</p>
+
+        <p>We can make <a href="#">mushroom chairs</a>, <a href="#">mushroom airplanes</a>, <a href="#">mushroom cats</a>, and <a href="#">tons of other products</a>.
+
+      <!-- business, who we are -->
+        <p>Ecovative was founded in 2007 by Eben Bayer and Gavin McIntyre.</p>
+
+        <p>We were founded
+      </main>
+
+    </div>
+    
+
+    <!-- Include your JS here -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/fittext.js"></script>
+    <script>
+      $("#page-title").fitText();
+    </script>
   </body>
 </html>
