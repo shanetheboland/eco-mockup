@@ -435,6 +435,9 @@ hr {
 ul, ol {
   margin-left: 30px; }
 
+.section-label {
+  color: #e8e8e8; }
+
 /* Layout */
 /* ==========================================================================
  GRID
@@ -607,7 +610,77 @@ main p {
 /* ==========================================================================
  FOOTER
  ========================================================================== */
+footer a {
+  color: #FFFFFF; }
+  footer a:hover {
+    color: #e8e8e8; }
+  footer a:visited {
+    color: #FFFFFF; }
+
 /* Modules */
+/* ==|====================
+   Modules/Buttons
+   Styles for all buttons
+   ======================= */
+.button {
+  background: #006c64;
+  color: #FFFFFF;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 0;
+  margin: 30px; }
+  .button:visited {
+    background: #006c64;
+    color: #FFFFFF; }
+  .button:hover {
+    background: #00524c;
+    color: #FFFFFF; }
+  .button:active {
+    background: #003934;
+    color: #FFFFFF;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px); }
+
+.stacked-buttons {
+  display: block;
+  border-radius: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  border-top: 1px solid #e8e8e8; }
+
+.stacked-buttons.button {
+  padding: 15px 30px; }
+
+.stacked-buttons:first-of-type {
+  border-radius: 4px 4px 0 0;
+  border-top: 0; }
+
+.stacked-buttons:last-of-type {
+  border-radius: 0 0 4px 4px; }
+
+.inverted-button {
+  background: #e8e8e8;
+  color: #006c64; }
+  .inverted-button:visited {
+    background: #e8e8e8;
+    color: #006c64; }
+  .inverted-button:hover {
+    background: #dbdbdb;
+    color: #006c64; }
+  .inverted-button:active {
+    background: #cecece;
+    color: #006c64;
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px); }
+
 /* Vendor */
 /*!
 Animate.css - http://daneden.me/animate

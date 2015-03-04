@@ -1,0 +1,43 @@
+/* ==|====================
+   Modules/Buttons
+   Styles for all buttons
+   ======================= */
+.button {
+    //everyday normal guy button
+    @include button($primary-color, $white);
+    @include transition(all);
+    display: inline-block;
+    padding: $spacing-unit/2 $spacing-unit;
+    font-size: 16px;
+    border-radius: $border-radius;
+    border:0;
+
+    //for spacing between buttons and other elements
+    margin:$spacing-unit;
+}
+
+.stacked-buttons {
+    display: block;
+    border-radius: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    border-top: 1px solid $lightgray;
+}
+.stacked-buttons.button {
+    padding: $spacing-unit/2 $spacing-unit;
+}
+.stacked-buttons:first-of-type {
+    border-radius: $border-radius $border-radius 0 0;
+    border-top: 0;
+}
+.stacked-buttons:last-of-type {
+    border-radius: 0 0 $border-radius $border-radius;
+}
+
+.inverted-button {
+
+    @include button($lightgray, $primary-color);
+
+}
