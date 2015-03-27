@@ -2,6 +2,12 @@
  HEADER
  ========================================================================== */
 
+ nav {
+
+    padding: $spacing-unit 0 $lg-spacing-unit 0;
+
+ }
+ 
  .page-title {
 
     text-transform: uppercase;
@@ -12,6 +18,12 @@
 
     background: #006c64;
 
+ }
+
+ .lightgreen {
+
+    background: #30A8A0;
+    
  }
 
  .nav-link+.nav-link {

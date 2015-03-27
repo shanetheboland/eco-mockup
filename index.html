@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      Page | Website Title
+      Home | Ecovative Design
     </title>
     <meta name="author" content="Shane Boland">
     <meta name="description" content="minimal template to building reponsive websites with html5 and sass">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Compiled and minified stylesheet -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
     <!-- Google Fonts -->
@@ -27,28 +28,33 @@
   </head>
   <body>
     
-    <nav class="grid">
+  <!-- Start Header Section -->
+    <header class="grid">
       <div class="unit whole align-center">
+    
+        <!-- Start Navigation -->
+        <nav>
+          <a href="#" class="nav-link">Products & Projects</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="#" class="nav-link">Store</a>
+          <a href="#" class="nav-link">Contact</a>
+        </nav>
+        <!-- Close Navigation -->
 
-        <a href="#" class="nav-link">Products & Projects</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Blog</a>
-        <a href="#" class="nav-link">Store</a>
-        <a href="#" class="nav-link">Contact</a>
-
-      </div>
-    </nav>
-
-    <div class="grid">
-      <div class="unit whole align-center">
-
+        <!-- Title of Site -->
         <h1 id="page-title" class="page-title">Ecovative</h1>
 
-      </div>
-    </div>
+        <!-- Arrow to continue -->
+        <!-- <a href="#section-two">
+          <span class="glyphicon glyphicon-arrow-down"></span>
+        </a> -->
 
+      </div>
+    </header>
+  <!-- Close Header Section -->
     
-    <div class="grid">
+    <div class="grid" id="section-two">
 
       <main class="unit three-fifths centered">
 
@@ -58,6 +64,7 @@
 
         <p>Yes that’s right. <b>Mushrooms</b>.</p>
 
+        <p>How do we do it? That’s a great question.</p>
         <ol>
           <li>We take <b>substrate</b> and mix it with <b>mycelium</b>.</li>
           <li>We put this mixture in a tray, and wait as magic occurs.</li>
@@ -70,32 +77,39 @@
 
         <p>We started in the basement of a university. Now we’re in a <a href="#">10,000 sq ft. headquarters</a>, making products for <a href="#">business partners</a> all around the world.</p>
 
-        <p>If you’re a medium—large business looking to partner with us, please <a href="#">contact us</a> and we can get the conversation started.</p>
+        <p>If you’re a medium - large business looking to partner with us, please <a href="#">contact us</a> and we can get the conversation started.</p>
 
       </main>
 
     </div>
     
     <div class="grid">
+      <div class="unit whole lightgreen grid align-center">
+        <p>Join our email list for updates on everything mushrooms & eco-friendly.</p>
+        <label for="email-input">Your Email: </label>
+        <input type="text" id="email-input">
+      </div>
+    </div>
+
+    <div class="grid">
 
       <footer class="unit whole centered green grid">
 
-        <div class="unit three-fifths centered grid">
+        <div class="unit three-fifths centered align-center grid">
 
           <div class="unit one-third">
-            <a href="#">This</a><br>
-            <a href="#">is a</a><br>
-            <a href="#">footer</a>
+            <a href="#">Careers</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">Press</a>
           </div>
           <div class="unit one-third">
-            <a href="#">Link</a><br>
-            <a href="#">Link 2</a><br>
-            <a href="#">Link 3</a>
+            <a href="#">Facebook</a><br>
+            <a href="#">Twitter</a>
           </div>
           <div class="unit one-third">
-            <a href="#">Link</a><br>
-            <a href="#">Link 2</a><br>
-            <a href="#">Link 3</a>
+            <a href="#">70 Cohoes Avenue</a><br>
+            <a href="#">Troy, NY 12183</a><br>
+            <a href="#">518.273.3753</a>
           </div>
 
         </div>
@@ -107,6 +121,20 @@
     <script src="js/fittext.js"></script>
     <script>
       $("#page-title").fitText();
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
     </script>
   </body>
 </html>

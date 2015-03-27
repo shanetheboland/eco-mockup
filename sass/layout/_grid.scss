@@ -18,6 +18,11 @@
 		margin: 0 auto;
  }
 
+ .full-height {
+    min-height: 100%;
+    min-height: 100vh;
+ }
+
  /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
  .grid .unit:first-child { padding-left: $spacing-unit; }
  .grid .unit:last-child { padding-right: $spacing-unit; }
